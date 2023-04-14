@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 
 const profileSchema = new Schema({
   name: String,
-  photo: String
+  photo: String,
 },{
   timestamps: true,
 })
@@ -12,3 +12,11 @@ const profileSchema = new Schema({
 const Profile = mongoose.model('Profile', profileSchema)
 
 export { Profile }
+
+
+//Test User 1
+//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiJUZXN0QWNjb3VudDIiLCJlbWFpbCI6InRlc3QzQHRlc3QuY29tIiwicHJvZmlsZSI6IjY0MzliY2QyYjliZjJiNDUyZDFhNzY1NCIsIl9pZCI6IjY0MzliY2QyYjliZjJiNDUyZDFhNzY1NiIsImNyZWF0ZWRBdCI6IjIwMjMtMDQtMTRUMjA6NTE6MzAuMDcxWiIsInVwZGF0ZWRBdCI6IjIwMjMtMDQtMTRUMjA6NTE6MzAuMDcxWiIsIl9fdiI6MH0sImlhdCI6MTY4MTUwNTQ5MCwiZXhwIjoxNjgxNTkxODkwfQ.2d_7kISXZrew53vomA2WxWuXyn_0227aK48Mg2A0fLU
+
+
+//Test user2
+//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiJUZXN0QWNjb3VudCIsImVtYWlsIjoidGVzdDJAdGVzdC5jb20iLCJwcm9maWxlIjoiNjQzOWI2NDlhNjJmM2NiMDhkNjM5YzFkIiwiX2lkIjoiNjQzOWI2NDlhNjJmM2NiMDhkNjM5YzFmIiwiY3JlYXRlZEF0IjoiMjAyMy0wNC0xNFQyMDoyMzozNy4zOTBaIiwidXBkYXRlZEF0IjoiMjAyMy0wNC0xNFQyMDoyMzozNy4zOTBaIiwiX192IjowfSwiaWF0IjoxNjgxNTAzODE3LCJleHAiOjE2ODE1OTAyMTd9.c6Q-ZYS-hpDVPqYBh-arbap5hDQNUMu5mi65zLSkYJE
