@@ -14,28 +14,17 @@ async function index(req, res) {
 
 async function create(req, res){
   try{
-    req.body.caker = req.user.profile
-    const recipe = await Recipe.create(req.body)
-    res.status(201).json(recipe)
+    const ingredient = await Ingredient.create(req.body)
+    res.status(201).json(ingredient)
   } catch(error){
     console.log(error)
     res.status(500).json(error)
   }
 }
 
-async function deleteRecipe(req, res){
-  try {
-    const recipe = await Recipe.findByIdAndDelete(req.params.id)
-    res.status(201).json(recipe)
-  } catch (error) {
-    console.log(error)
-    res.status(500).json(error)
-  }
-}
 
 
 export { 
   index,
   create,
-  deleteRecipe as delete,
 }
