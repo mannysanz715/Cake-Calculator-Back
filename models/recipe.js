@@ -10,6 +10,7 @@ const recipeSchema = new Schema({
   servings: Number,
   customPrice: Number,
   recipeDirections: String,
+  ingredients : {type: Schema.Types.ObjectId, ref: 'Ingredient'},
   allergens: [String],
   storageInfo: String,
   photo: String
