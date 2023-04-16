@@ -14,6 +14,7 @@ async function index(req, res) {
 
 async function create(req, res){
   try{
+    req.body.caker = req.user.profile
     const ingredient = await Ingredient.create(req.body)
     res.status(201).json(ingredient)
   } catch(error){
