@@ -3,7 +3,7 @@ import { v2 as cloudinary } from 'cloudinary'
 
 async function index(req, res) {
   try {
-    const recipes = await Recipe.find({'caker' : req.user.profile})
+    const recipes = await Recipe.find({'caker' : req.user.profile}).populate('ingredients').populate('caker')
     res.status(200).json(recipes)
   } catch (error) {
     console.log(error)
